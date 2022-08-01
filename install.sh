@@ -29,7 +29,7 @@ pacman -S gimp vim lxappearance
 #dnf install ./rpm-packages/ocs-url-3.1.0-1.fc20.x86_64.rpm
 
 # Installing fonts
-pacman -S ttf-font-awesome
+pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 unzip FiraCode.zip -d /usr/share/fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
