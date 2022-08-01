@@ -21,7 +21,8 @@ mv ./dotconfig/* ~/.config
 mv ./bg.jpg ~/.config
 
 # Installing Essential Programs 
-pacman -S sddm bspwm sxhkd kitty rofi polybar picom thunar nitrogen lxpolkit
+pacman -S sddm bspwm sxhkd kitty rofi polybar picom thunar nitrogen
+yay -S lxpolkit
 # Installing Other less important Programs
 pacman -S gimp vim lxappearance
 # Installing Custom ocs-url package
