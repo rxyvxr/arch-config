@@ -18,7 +18,7 @@ makepkg -si
 mkdir ~/.config
 chown $(whoami): ~/.config
 mv ./dotconfig/* ~/.config
-mv ./bg.jpg ~/.config
+mv ./bg.png ~/.config
 
 # Installing Essential Programs 
 pacman -S sddm bspwm sxhkd kitty rofi polybar picom thunar nitrogen
