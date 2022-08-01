@@ -9,6 +9,11 @@ fi
 # Updating System
 pacman -Syu
 
+# Installing an aur helper
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 # Making .config and Moving dotfiles and Background to .config
 mkdir ~/.config
 chown $(whoami): ~/.config
@@ -18,7 +23,7 @@ mv ./bg.jpg ~/.config
 # Installing Essential Programs 
 pacman -S sddm bspwm sxhkd kitty rofi polybar picom thunar nitrogen lxpolkit
 # Installing Other less important Programs
-pacman -S mangohud gimp vim lxappearance
+pacman -S gimp vim lxappearance
 # Installing Custom ocs-url package
 #dnf install ./rpm-packages/ocs-url-3.1.0-1.fc20.x86_64.rpm
 
