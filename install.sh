@@ -9,11 +9,6 @@ fi
 # Updating System
 pacman -Syu
 
-# Installing an aur helper
-pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
 # Making .config and Moving dotfiles and Background to .config
 mkdir ~/.config
 chown $(whoami): ~/.config
